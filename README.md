@@ -2,14 +2,18 @@
 
 SwiftUI + iOS 15+ offline plant classifier using the Nature Explorer plants model.
 
+<p align="center">
+  <img src="docs/app-screenshot-01.png" alt="Offline PlantID app screenshot" width="320">
+</p>
+
 ## What you need
 - macOS with Xcode 14+ installed
 - An iPhone or iOS simulator
 - This repo checked out locally
 
 ## Quick start
-1) Open `Offline PlantID.xcodeproj` in Xcode.
-2) When prompted, resolve Swift package dependencies.
+1) Run `pod install` in the repo root.
+2) Open `Offline PlantID.xcworkspace` in Xcode.
 3) Select a device/simulator and run.
 
 ## Model + labels (already included)
@@ -24,12 +28,9 @@ The `.tflite` model file is not checked into git. Download it from Kaggle and pl
 Model source:
 https://www.kaggle.com/models/google/aiy/tensorFlow1/vision-classifier-plants-v1/1
 
-## TensorFlow Lite Swift package
-The project uses Swift Package Manager to pull:
-- Repo: https://github.com/tensorflow/tensorflow
-- Product: `TensorFlowLiteSwift`
-
-If Xcode prompts you to resolve packages, accept the defaults.
+## TensorFlow Lite Swift dependency
+This project uses CocoaPods. The `Podfile` includes:
+- `TensorFlowLiteSwift`
 
 ## Regenerate the project (if needed)
 If you modify `project.yml`, regenerate the Xcode project:

@@ -3,8 +3,8 @@
 This repo already contains a generated Xcode project and all required resources. Use this guide if you want to rebuild the project or understand how it is wired.
 
 ## Build from the existing project
-1) Open `Offline PlantID.xcodeproj` in Xcode.
-2) Resolve Swift package dependencies when prompted.
+1) Run `pod install` in the repo root.
+2) Open `Offline PlantID.xcworkspace` in Xcode.
 3) Run on a device or simulator.
 
 ## Project layout
@@ -19,11 +19,12 @@ If you change `project.yml`, regenerate the project with XcodeGen:
 xcodegen
 ```
 
-## Add TensorFlow Lite Swift package (manual path)
-If you do not want to use XcodeGen:
-1) In Xcode: File > Add Packages...
-2) URL: https://github.com/tensorflow/tensorflow
-3) Select the `TensorFlowLiteSwift` product
+## CocoaPods dependency
+This project uses CocoaPods for TensorFlow Lite. If you modify the `Podfile`, rerun:
+
+```sh
+pod install
+```
 
 ## Model + labels
 These files must be included in the app bundle:

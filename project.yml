@@ -4,11 +4,7 @@ options:
 settings:
   base:
     SWIFT_VERSION: 5.0
-packages:
-  TensorFlowLiteSwift:
-    url: https://github.com/tensorflow/tensorflow
-    from: 2.16.1
-
+    GENERATE_INFOPLIST_FILE: YES
 targets:
   Offline PlantID:
     type: application
@@ -18,6 +14,3 @@ targets:
       - path: Sources
     resources:
       - path: inat_models
-    dependencies:
-      - package: TensorFlowLiteSwift
-        product: TensorFlowLiteSwift

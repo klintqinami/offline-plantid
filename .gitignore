@@ -10,6 +10,7 @@ DerivedData/
 *.xcuserstate
 xcuserdata/
 *.xcuserdata/
+*.xcworkspace/xcuserdata/
 *.moved-aside
 *.hmap
 *.ipa

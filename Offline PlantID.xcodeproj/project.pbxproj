@@ -3,33 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A1A568F27E528CB7966D8E6 /* OfflinePlantIDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */; };
+		2C586708412BD72DE833AEE0 /* Pods_Offline_PlantID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */; };
 		6484ED79E5DEAF85A5915269 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */; };
 		6A43F8D96DAFB1C3F02922DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F8CAD5ADB342816C49174 /* ContentView.swift */; };
-		73110DD6F978B16F9FA2D4E9 /* TensorFlowLiteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */; };
 		74761573AC0ED76766A5E7A9 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */; };
 		B34B79F148B8D67445E9A37F /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */; };
+		B4C141752F1F5A2600E3631C /* aiy_plants_V1_labelmap.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */; };
+		B4C141762F1F5A2600E3631C /* inat_plant.tflite in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C141722F1F587700E3631C /* inat_plant.tflite */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B4C141742F1F5A1600E3631C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B4C141752F1F5A2600E3631C /* aiy_plants_V1_labelmap.csv in CopyFiles */,
+				B4C141762F1F5A2600E3631C /* inat_plant.tflite in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Offline PlantID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offline PlantID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.debug.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.debug.xcconfig"; sourceTree = "<group>"; };
 		2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePlantIDApp.swift; sourceTree = "<group>"; };
 		637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessor.swift; sourceTree = "<group>"; };
 		85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = aiy_plants_V1_labelmap.csv; sourceTree = "<group>"; };
+		B4C141722F1F587700E3631C /* inat_plant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = inat_plant.tflite; sourceTree = "<group>"; };
+		C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.release.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.release.xcconfig"; sourceTree = "<group>"; };
 		D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		DC6F8CAD5ADB342816C49174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offline_PlantID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43651B3E3AE4CD01F7EC7A03 /* Frameworks */ = {
+		73FD21E034959846D60BA26D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73110DD6F978B16F9FA2D4E9 /* TensorFlowLiteSwift in Frameworks */,
+				2C586708412BD72DE833AEE0 /* Pods_Offline_PlantID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +77,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8106B61A7A9DB17B8B7A345E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */,
+				C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4C141732F1F587700E3631C /* inat_models */ = {
+			isa = PBXGroup;
+			children = (
+				B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */,
+				B4C141722F1F587700E3631C /* inat_plant.tflite */,
+			);
+			path = inat_models;
+			sourceTree = "<group>";
+		};
+		BC7C3054D8CF5B24FE34A903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4B7B489B8C7CA1E1A2A8F97 = {
 			isa = PBXGroup;
 			children = (
 				5E1277EA8ABCB36AA7707009 /* Sources */,
 				71224CD7697FD962FBB873C6 /* Products */,
+				8106B61A7A9DB17B8B7A345E /* Pods */,
+				BC7C3054D8CF5B24FE34A903 /* Frameworks */,
+				B4C141732F1F587700E3631C /* inat_models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,17 +121,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8309C33EDBC2E8B26C407F4 /* Build configuration list for PBXNativeTarget "Offline PlantID" */;
 			buildPhases = (
+				CC040A1F7E0C3282452E1AB3 /* [CP] Check Pods Manifest.lock */,
 				5F97A61EE8D4E6A36A099F48 /* Sources */,
-				43651B3E3AE4CD01F7EC7A03 /* Frameworks */,
+				73FD21E034959846D60BA26D /* Frameworks */,
+				53E202469D2E31FB4D784DF4 /* [CP] Copy Pods Resources */,
+				B4C141742F1F5A1600E3631C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Offline PlantID";
-			packageProductDependencies = (
-				35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */,
-			);
 			productName = "Offline PlantID";
 			productReference = 21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */;
 			productType = "com.apple.product-type.application";
@@ -105,10 +155,7 @@
 			);
 			mainGroup = F4B7B489B8C7CA1E1A2A8F97;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */,
-			);
-			preferredProjectObjectVersion = 77;
+			productRefGroup = 71224CD7697FD962FBB873C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -116,6 +163,52 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53E202469D2E31FB4D784DF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC040A1F7E0C3282452E1AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Offline PlantID-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F97A61EE8D4E6A36A099F48 /* Sources */ = {
@@ -178,6 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -239,6 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +347,7 @@
 		};
 		5810CB09DFC4DA2F8F556CEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -268,6 +364,7 @@
 		};
 		7F66741EACE4A062D23ED758 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -304,25 +401,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tensorflow/tensorflow";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.16.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */;
-			productName = TensorFlowLiteSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A08D71BFE876E9A8E26EE8A /* Project object */;
 }
