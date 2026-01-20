@@ -9,7 +9,21 @@ struct ContentView: View {
     private let modelDataHandler = ModelDataHandler()
 
     var body: some View {
-        ZStack {
+        ScrollView {
+            VStack(spacing: 14) {
+                header
+                photoCard
+                actionRow
+                resultCard
+                tipsCard
+                Spacer(minLength: 0)
+            }
+            .frame(maxWidth: .infinity, minHeight: UIScreen.main.bounds.height, alignment: .top)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 14)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(
             LinearGradient(
                 colors: [Color(red: 0.96, green: 0.98, blue: 0.94),
                          Color(red: 0.90, green: 0.95, blue: 0.90)],
@@ -17,23 +31,7 @@ struct ContentView: View {
                 endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
-
-            ScrollView {
-                VStack(spacing: 14) {
-                    header
-                    photoCard
-                    actionRow
-                    resultCard
-                    tipsCard
-                    Spacer(minLength: 0)
-                }
-                .frame(maxWidth: .infinity, minHeight: UIScreen.main.bounds.height, alignment: .top)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 14)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        )
         .sheet(isPresented: $isPickerPresented) {
             PhotoPicker { image in
                 selectedImage = image
@@ -186,9 +184,16 @@ private extension ContentView {
                         Text("Most likely:")
                             .font(.custom("AvenirNext-Medium", size: 12))
                             .foregroundColor(Color(red: 0.35, green: 0.42, blue: 0.36))
-                        Text(topPrediction.label)
-                            .font(.custom("AvenirNext-DemiBold", size: 13))
-                            .foregroundColor(Color(red: 0.12, green: 0.18, blue: 0.14))
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(topPrediction.displayName)
+                                .font(.custom("AvenirNext-DemiBold", size: 13))
+                                .foregroundColor(Color(red: 0.12, green: 0.18, blue: 0.14))
+                            if let secondary = topPrediction.secondaryName {
+                                Text(secondary)
+                                    .font(.custom("AvenirNext-Regular", size: 11))
+                                    .foregroundColor(Color(red: 0.42, green: 0.50, blue: 0.44))
+                            }
+                        }
                     }
                 }
                 VStack(spacing: 8) {
@@ -196,9 +201,16 @@ private extension ContentView {
                         let isTop = prediction.id == topPrediction?.id
                         VStack(spacing: 6) {
                             HStack(alignment: .firstTextBaseline) {
-                                Text(prediction.label)
-                                    .font(.custom("AvenirNext-Medium", size: 13))
-                                    .foregroundColor(Color(red: 0.16, green: 0.20, blue: 0.17))
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(prediction.displayName)
+                                        .font(.custom("AvenirNext-Medium", size: 13))
+                                        .foregroundColor(Color(red: 0.16, green: 0.20, blue: 0.17))
+                                    if let secondary = prediction.secondaryName {
+                                        Text(secondary)
+                                            .font(.custom("AvenirNext-Regular", size: 11))
+                                            .foregroundColor(Color(red: 0.42, green: 0.50, blue: 0.44))
+                                    }
+                                }
                                 Spacer()
                                 Text(String(format: "%.0f%%", min(max(prediction.confidence, 0), 1) * 100))
                                     .font(.custom("AvenirNext-DemiBold", size: 11))

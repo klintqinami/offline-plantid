@@ -5,6 +5,8 @@ settings:
   base:
     SWIFT_VERSION: 5.0
     GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
 targets:
   Offline PlantID:
     type: application
@@ -12,5 +14,15 @@ targets:
     deploymentTarget: "15.0"
     sources:
       - path: Sources
-    resources:
-      - path: inat_models
+      - path: inat_models/aiy_plants_V1_labelmap.csv
+        type: file
+        buildPhase: resources
+      - path: inat_models/aiy_plants_common_names.json
+        type: file
+        buildPhase: resources
+      - path: inat_models/inat_plant.tflite
+        type: file
+        buildPhase: resources
+      - path: Resources/LaunchScreen.storyboard
+        type: file
+        buildPhase: resources

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="Q2f-y0-u4p">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="Q2f-y0-u4p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAr-1p-uhp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Offline PlantID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d2-5D-Z8Z">
+                                <rect key="frame" x="20" y="120" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="28"/>
+                                <color key="textColor" red="0.10" green="0.16" blue="0.13" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ew3-YC-FOU"/>
+                        <color key="backgroundColor" red="0.96" green="0.98" blue="0.94" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9d2-5D-Z8Z" firstAttribute="leading" secondItem="Ew3-YC-FOU" secondAttribute="leading" constant="20" id="WfQ-Xy-2gS"/>
+                            <constraint firstItem="9d2-5D-Z8Z" firstAttribute="top" secondItem="Ew3-YC-FOU" secondAttribute="top" constant="40" id="i8e-8b-XnP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6B-7f-5Xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="22"/>
+        </scene>
+    </scenes>
+</document>

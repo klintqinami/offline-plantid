@@ -10,6 +10,7 @@ This repo already contains a generated Xcode project and all required resources.
 ## Project layout
 - `Sources/`: SwiftUI app code
 - `inat_models/`: TFLite model + labels
+- `Resources/`: Launch screen storyboard
 - `project.yml`: XcodeGen project definition
 
 ## Rebuild the Xcode project (optional)
@@ -28,6 +29,7 @@ pod install
 
 ## Model + labels
 These files must be included in the app bundle:
+- `inat_models/aiy_plants_common_names.json`
 - `inat_models/aiy_plants_V1_labelmap.csv`
 - `inat_models/inat_plant.tflite`
 

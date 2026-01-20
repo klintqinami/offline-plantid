@@ -4,8 +4,17 @@ import UIKit
 
 struct Prediction: Identifiable {
     let id = UUID()
-    let label: String
+    let scientificName: String
+    let commonName: String?
     let confidence: Float
+
+    var displayName: String {
+        commonName ?? scientificName
+    }
+
+    var secondaryName: String? {
+        commonName == nil ? nil : scientificName
+    }
 }
 
 enum ModelDataHandlerError: Error, LocalizedError {
@@ -31,6 +40,7 @@ enum ModelDataHandlerError: Error, LocalizedError {
 final class ModelDataHandler {
     private let interpreter: Interpreter
     private let labels: [String]
+    private let commonNameLookup: [String: String]
     private let inputWidth: Int
     private let inputHeight: Int
     private let inputChannels: Int
@@ -40,13 +50,15 @@ final class ModelDataHandler {
     private let modelFileExtension = "tflite"
     private let labelsFileName = "aiy_plants_V1_labelmap"
     private let labelsFileExtension = "csv"
+    private let commonNamesFileName = "aiy_plants_common_names"
+    private let commonNamesFileExtension = "json"
 
     init?() {
         do {
-            guard let modelPath = Bundle.main.path(forResource: modelFileName, ofType: modelFileExtension) else {
+            guard let modelPath = ModelDataHandler.bundlePath(forResource: modelFileName, ofType: modelFileExtension) else {
                 throw ModelDataHandlerError.modelNotFound
             }
-            guard let labelsPath = Bundle.main.path(forResource: labelsFileName, ofType: labelsFileExtension) else {
+            guard let labelsPath = ModelDataHandler.bundlePath(forResource: labelsFileName, ofType: labelsFileExtension) else {
                 throw ModelDataHandlerError.labelsNotFound
             }
 
@@ -61,6 +73,13 @@ final class ModelDataHandler {
 
             let labelText = try String(contentsOfFile: labelsPath, encoding: .utf8)
             labels = ModelDataHandler.parseCSVLabels(from: labelText)
+
+            if let commonNamesPath = ModelDataHandler.bundlePath(forResource: commonNamesFileName, ofType: commonNamesFileExtension),
+               let commonData = try? Data(contentsOf: URL(fileURLWithPath: commonNamesPath)) {
+                commonNameLookup = (try? ModelDataHandler.parseCommonNames(from: commonData)) ?? [:]
+            } else {
+                commonNameLookup = [:]
+            }
         } catch {
             return nil
         }
@@ -94,8 +113,9 @@ final class ModelDataHandler {
             .prefix(topK)
 
         return topIndices.map { index, score in
-            let label = (index < labels.count ? labels[index] : nil) ?? "Unknown"
-            return Prediction(label: label, confidence: score)
+            let scientificName = (index < labels.count ? labels[index] : nil) ?? "Unknown"
+            let commonName = commonNameLookup[scientificName]
+            return Prediction(scientificName: scientificName, commonName: commonName, confidence: score)
         }
     }
 
@@ -121,6 +141,18 @@ final class ModelDataHandler {
             labels[id] = name
         }
         return labels
+    }
+
+    private static func parseCommonNames(from data: Data) throws -> [String: String] {
+        let json = try JSONSerialization.jsonObject(with: data, options: [])
+        return json as? [String: String] ?? [:]
+    }
+
+    private static func bundlePath(forResource name: String, ofType ext: String) -> String? {
+        if let path = Bundle.main.path(forResource: name, ofType: ext) {
+            return path
+        }
+        return Bundle.main.path(forResource: name, ofType: ext, inDirectory: "inat_models")
     }
 }
 

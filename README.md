@@ -22,6 +22,7 @@ SwiftUI + iOS 15+ offline plant classifier using the Nature Explorer plants mode
 These files are bundled as app resources via `project.yml`:
 - `inat_models/inat_plant.tflite`
 - `inat_models/aiy_plants_V1_labelmap.csv`
+- `inat_models/aiy_plants_common_names.json`
 
 ## Get the TFLite model file
 The `.tflite` model file is not checked into git. Download it from Kaggle and place it at:

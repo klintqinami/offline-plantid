@@ -3,60 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A1A568F27E528CB7966D8E6 /* OfflinePlantIDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */; };
-		2C586708412BD72DE833AEE0 /* Pods_Offline_PlantID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */; };
+		482D8B3AC65C033A9B4FAF35 /* inat_plant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9F0245B5500F2D51AA6F5 /* inat_plant.tflite */; };
 		6484ED79E5DEAF85A5915269 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */; };
+		695C333B7B02E31EF7EE07C6 /* aiy_plants_V1_labelmap.csv in Resources */ = {isa = PBXBuildFile; fileRef = FC163BFE2A0544E65AC45D2B /* aiy_plants_V1_labelmap.csv */; };
 		6A43F8D96DAFB1C3F02922DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F8CAD5ADB342816C49174 /* ContentView.swift */; };
 		74761573AC0ED76766A5E7A9 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */; };
 		B34B79F148B8D67445E9A37F /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */; };
-		B4C141752F1F5A2600E3631C /* aiy_plants_V1_labelmap.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */; };
-		B4C141762F1F5A2600E3631C /* inat_plant.tflite in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C141722F1F587700E3631C /* inat_plant.tflite */; };
+		C355D13D0B2F450A02FF5EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A920382B929926417AC6152 /* LaunchScreen.storyboard */; };
+		DB4FC7328ADBC0AB90AD4400 /* aiy_plants_common_names.json in Resources */ = {isa = PBXBuildFile; fileRef = 924E5A85751AEFDA41DB4972 /* aiy_plants_common_names.json */; };
+		FCCEFB5984CDB12A5AB9A12A /* Pods_Offline_PlantID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC62DA7BB43EF68F9EF1E95F /* Pods_Offline_PlantID.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B4C141742F1F5A1600E3631C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				B4C141752F1F5A2600E3631C /* aiy_plants_V1_labelmap.csv in CopyFiles */,
-				B4C141762F1F5A2600E3631C /* inat_plant.tflite in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offline PlantID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.debug.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.debug.xcconfig"; sourceTree = "<group>"; };
+		0A920382B929926417AC6152 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FA9F0245B5500F2D51AA6F5 /* inat_plant.tflite */ = {isa = PBXFileReference; path = inat_plant.tflite; sourceTree = "<group>"; };
+		21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Offline PlantID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePlantIDApp.swift; sourceTree = "<group>"; };
 		637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessor.swift; sourceTree = "<group>"; };
 		85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
-		B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = aiy_plants_V1_labelmap.csv; sourceTree = "<group>"; };
-		B4C141722F1F587700E3631C /* inat_plant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = inat_plant.tflite; sourceTree = "<group>"; };
-		C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.release.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.release.xcconfig"; sourceTree = "<group>"; };
+		924E5A85751AEFDA41DB4972 /* aiy_plants_common_names.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = aiy_plants_common_names.json; sourceTree = "<group>"; };
+		9D1BDA350836141DD932D7DA /* Pods-Offline PlantID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.debug.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.debug.xcconfig"; sourceTree = "<group>"; };
+		CC62DA7BB43EF68F9EF1E95F /* Pods_Offline_PlantID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offline_PlantID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		DC6F8CAD5ADB342816C49174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offline_PlantID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5EC55041A531691B60A6D /* Pods-Offline PlantID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline PlantID.release.xcconfig"; path = "Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID.release.xcconfig"; sourceTree = "<group>"; };
+		FC163BFE2A0544E65AC45D2B /* aiy_plants_V1_labelmap.csv */ = {isa = PBXFileReference; path = aiy_plants_V1_labelmap.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		73FD21E034959846D60BA26D /* Frameworks */ = {
+		44331CF923A53E5F51626CBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C586708412BD72DE833AEE0 /* Pods_Offline_PlantID.framework in Frameworks */,
+				FCCEFB5984CDB12A5AB9A12A /* Pods_Offline_PlantID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01ABEA0254843BACB7DB339F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC62DA7BB43EF68F9EF1E95F /* Pods_Offline_PlantID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E1277EA8ABCB36AA7707009 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +67,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		6915D4CE600BD42F09009172 /* inat_models */ = {
+			isa = PBXGroup;
+			children = (
+				924E5A85751AEFDA41DB4972 /* aiy_plants_common_names.json */,
+				FC163BFE2A0544E65AC45D2B /* aiy_plants_V1_labelmap.csv */,
+				0FA9F0245B5500F2D51AA6F5 /* inat_plant.tflite */,
+			);
+			path = inat_models;
+			sourceTree = "<group>";
+		};
 		71224CD7697FD962FBB873C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,40 +85,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8106B61A7A9DB17B8B7A345E /* Pods */ = {
+		AB0CF6748D65B8E572B27B1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */,
-				C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */,
+				9D1BDA350836141DD932D7DA /* Pods-Offline PlantID.debug.xcconfig */,
+				ECD5EC55041A531691B60A6D /* Pods-Offline PlantID.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B4C141732F1F587700E3631C /* inat_models */ = {
+		C048187B38C01789D5A344D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B4C141712F1F587700E3631C /* aiy_plants_V1_labelmap.csv */,
-				B4C141722F1F587700E3631C /* inat_plant.tflite */,
+				0A920382B929926417AC6152 /* LaunchScreen.storyboard */,
 			);
-			path = inat_models;
-			sourceTree = "<group>";
-		};
-		BC7C3054D8CF5B24FE34A903 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F07B73D46BC533EF68CE9187 /* Pods_Offline_PlantID.framework */,
-			);
-			name = Frameworks;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F4B7B489B8C7CA1E1A2A8F97 = {
 			isa = PBXGroup;
 			children = (
+				6915D4CE600BD42F09009172 /* inat_models */,
+				C048187B38C01789D5A344D1 /* Resources */,
 				5E1277EA8ABCB36AA7707009 /* Sources */,
 				71224CD7697FD962FBB873C6 /* Products */,
-				8106B61A7A9DB17B8B7A345E /* Pods */,
-				BC7C3054D8CF5B24FE34A903 /* Frameworks */,
-				B4C141732F1F587700E3631C /* inat_models */,
+				AB0CF6748D65B8E572B27B1C /* Pods */,
+				01ABEA0254843BACB7DB339F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,11 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8309C33EDBC2E8B26C407F4 /* Build configuration list for PBXNativeTarget "Offline PlantID" */;
 			buildPhases = (
-				CC040A1F7E0C3282452E1AB3 /* [CP] Check Pods Manifest.lock */,
+				DF1B061C69BAA735D2D1C636 /* [CP] Check Pods Manifest.lock */,
 				5F97A61EE8D4E6A36A099F48 /* Sources */,
-				73FD21E034959846D60BA26D /* Frameworks */,
-				53E202469D2E31FB4D784DF4 /* [CP] Copy Pods Resources */,
-				B4C141742F1F5A1600E3631C /* CopyFiles */,
+				E41A6DEEC97320EC60CCBB27 /* Resources */,
+				44331CF923A53E5F51626CBB /* Frameworks */,
+				628CFADD02F994CB43DE319A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +156,7 @@
 			);
 			mainGroup = F4B7B489B8C7CA1E1A2A8F97;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 71224CD7697FD962FBB873C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,8 +166,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E41A6DEEC97320EC60CCBB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C355D13D0B2F450A02FF5EFE /* LaunchScreen.storyboard in Resources */,
+				695C333B7B02E31EF7EE07C6 /* aiy_plants_V1_labelmap.csv in Resources */,
+				DB4FC7328ADBC0AB90AD4400 /* aiy_plants_common_names.json in Resources */,
+				482D8B3AC65C033A9B4FAF35 /* inat_plant.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		53E202469D2E31FB4D784DF4 /* [CP] Copy Pods Resources */ = {
+		628CFADD02F994CB43DE319A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,20 +189,16 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Offline PlantID/Pods-Offline PlantID-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC040A1F7E0C3282452E1AB3 /* [CP] Check Pods Manifest.lock */ = {
+		DF1B061C69BAA735D2D1C636 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +275,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -272,6 +285,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -319,6 +333,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,6 +349,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,7 +363,7 @@
 		};
 		5810CB09DFC4DA2F8F556CEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6E6D06104F311232EEB1AB6 /* Pods-Offline PlantID.release.xcconfig */;
+			baseConfigurationReference = ECD5EC55041A531691B60A6D /* Pods-Offline PlantID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -364,7 +380,7 @@
 		};
 		7F66741EACE4A062D23ED758 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB43C847B16E70669F78B6F /* Pods-Offline PlantID.debug.xcconfig */;
+			baseConfigurationReference = 9D1BDA350836141DD932D7DA /* Pods-Offline PlantID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
