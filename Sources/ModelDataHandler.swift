@@ -9,11 +9,25 @@ struct Prediction: Identifiable {
     let confidence: Float
 
     var displayName: String {
-        commonName ?? scientificName
+        if let commonName {
+            return Prediction.normalizedCommonName(commonName)
+        }
+        return scientificName
     }
 
     var secondaryName: String? {
         commonName == nil ? nil : scientificName
+    }
+
+    private static func normalizedCommonName(_ name: String) -> String {
+        let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return trimmed }
+        let hasUpper = trimmed.rangeOfCharacter(from: .uppercaseLetters) != nil
+        let hasLower = trimmed.rangeOfCharacter(from: .lowercaseLetters) != nil
+        if hasUpper && hasLower {
+            return trimmed
+        }
+        return trimmed.lowercased().localizedCapitalized
     }
 }
 
