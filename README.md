@@ -3,7 +3,9 @@
 SwiftUI + iOS 15+ offline plant classifier using the Nature Explorer plants model.
 
 <p align="center">
-  <img src="docs/app-screenshot-01.png" alt="Offline PlantID app screenshot" width="320">
+  <img src="docs/app-screenshot-01.png" alt="Offline PlantID app screenshot 1" width="260">
+  <img src="docs/app-screenshot-02.png" alt="Offline PlantID app screenshot 2" width="260">
+  <img src="docs/app-screenshot-03.png" alt="Offline PlantID app screenshot 3" width="260">
 </p>
 
 ## What you need
