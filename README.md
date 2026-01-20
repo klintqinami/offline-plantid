@@ -1,6 +1,6 @@
 # Offline PlantID
 
-SwiftUI + iOS 15+ offline plant classifier using the Nature Explorer plants model.
+Offline PlantID is a SwiftUI iOS app that identifies plants offline using a TensorFlow Lite model trained on iNaturalist data. It runs on-device, shows confidence-ranked results, and includes common-name mapping for predictions. The project targets iOS 15+ and uses CocoaPods for TensorFlow Lite.
 
 <p align="center">
   <img src="docs/app-screenshot-01.png" alt="Offline PlantID app screenshot 1" width="260">
