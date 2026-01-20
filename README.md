@@ -17,6 +17,13 @@ These files are bundled as app resources via `project.yml`:
 - `inat_models/inat_plant.tflite`
 - `inat_models/aiy_plants_V1_labelmap.csv`
 
+## Get the TFLite model file
+The `.tflite` model file is not checked into git. Download it from Kaggle and place it at:
+- `inat_models/inat_plant.tflite`
+
+Model source:
+https://www.kaggle.com/models/google/aiy/tensorFlow1/vision-classifier-plants-v1/1
+
 ## TensorFlow Lite Swift package
 The project uses Swift Package Manager to pull:
 - Repo: https://github.com/tensorflow/tensorflow
