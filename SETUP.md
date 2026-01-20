@@ -1,0 +1,36 @@
+# Offline PlantID (SwiftUI + iOS 15+)
+
+This repo already contains a generated Xcode project and all required resources. Use this guide if you want to rebuild the project or understand how it is wired.
+
+## Build from the existing project
+1) Open `Offline PlantID.xcodeproj` in Xcode.
+2) Resolve Swift package dependencies when prompted.
+3) Run on a device or simulator.
+
+## Project layout
+- `Sources/`: SwiftUI app code
+- `inat_models/`: TFLite model + labels
+- `project.yml`: XcodeGen project definition
+
+## Rebuild the Xcode project (optional)
+If you change `project.yml`, regenerate the project with XcodeGen:
+
+```sh
+xcodegen
+```
+
+## Add TensorFlow Lite Swift package (manual path)
+If you do not want to use XcodeGen:
+1) In Xcode: File > Add Packages...
+2) URL: https://github.com/tensorflow/tensorflow
+3) Select the `TensorFlowLiteSwift` product
+
+## Model + labels
+These files must be included in the app bundle:
+- `inat_models/aiy_plants_V1_labelmap.csv`
+- `inat_models/inat_plant.tflite`
+
+## Run
+Build and run on a device or simulator. Tap "Pick Photo" and you should see the top-5 predictions.
+
+If results look wrong, check model input normalization in `Sources/ImagePreprocessor.swift`.

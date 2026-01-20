@@ -1,0 +1,23 @@
+name: Offline PlantID
+options:
+  bundleIdPrefix: com.kqinami
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+packages:
+  TensorFlowLiteSwift:
+    url: https://github.com/tensorflow/tensorflow
+    from: 2.16.1
+
+targets:
+  Offline PlantID:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources
+    resources:
+      - path: inat_models
+    dependencies:
+      - package: TensorFlowLiteSwift
+        product: TensorFlowLiteSwift

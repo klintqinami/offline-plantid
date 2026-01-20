@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1A568F27E528CB7966D8E6 /* OfflinePlantIDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */; };
+		6484ED79E5DEAF85A5915269 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */; };
+		6A43F8D96DAFB1C3F02922DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F8CAD5ADB342816C49174 /* ContentView.swift */; };
+		73110DD6F978B16F9FA2D4E9 /* TensorFlowLiteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */; };
+		74761573AC0ED76766A5E7A9 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */; };
+		B34B79F148B8D67445E9A37F /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Offline PlantID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePlantIDApp.swift; sourceTree = "<group>"; };
+		637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessor.swift; sourceTree = "<group>"; };
+		85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		DC6F8CAD5ADB342816C49174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43651B3E3AE4CD01F7EC7A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73110DD6F978B16F9FA2D4E9 /* TensorFlowLiteSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E1277EA8ABCB36AA7707009 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F8CAD5ADB342816C49174 /* ContentView.swift */,
+				637A37D535FE8E2EC8DE3D1F /* ImagePreprocessor.swift */,
+				85EA074EBA805670760AFDC4 /* ModelDataHandler.swift */,
+				2C25DD27806CC95E1CCCE1E6 /* OfflinePlantIDApp.swift */,
+				D7DC4E3A41643ABDD4B0A118 /* PhotoPicker.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		71224CD7697FD962FBB873C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B7B489B8C7CA1E1A2A8F97 = {
+			isa = PBXGroup;
+			children = (
+				5E1277EA8ABCB36AA7707009 /* Sources */,
+				71224CD7697FD962FBB873C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0650FE822E0FCA2F43E78C2 /* Offline PlantID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8309C33EDBC2E8B26C407F4 /* Build configuration list for PBXNativeTarget "Offline PlantID" */;
+			buildPhases = (
+				5F97A61EE8D4E6A36A099F48 /* Sources */,
+				43651B3E3AE4CD01F7EC7A03 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Offline PlantID";
+			packageProductDependencies = (
+				35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */,
+			);
+			productName = "Offline PlantID";
+			productReference = 21F3BCA03151C3CF86FAF44E /* Offline PlantID.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A08D71BFE876E9A8E26EE8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 0396EC2C1E767F518882B644 /* Build configuration list for PBXProject "Offline PlantID" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F4B7B489B8C7CA1E1A2A8F97;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0650FE822E0FCA2F43E78C2 /* Offline PlantID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F97A61EE8D4E6A36A099F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A43F8D96DAFB1C3F02922DE /* ContentView.swift in Sources */,
+				B34B79F148B8D67445E9A37F /* ImagePreprocessor.swift in Sources */,
+				74761573AC0ED76766A5E7A9 /* ModelDataHandler.swift in Sources */,
+				0A1A568F27E528CB7966D8E6 /* OfflinePlantIDApp.swift in Sources */,
+				6484ED79E5DEAF85A5915269 /* PhotoPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BAC46A725D8298916A71778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		32FEDCB4BD634B445EDB73A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5810CB09DFC4DA2F8F556CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kqinami.OfflinePlantID;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F66741EACE4A062D23ED758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kqinami.OfflinePlantID;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0396EC2C1E767F518882B644 /* Build configuration list for PBXProject "Offline PlantID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FEDCB4BD634B445EDB73A8 /* Debug */,
+				0BAC46A725D8298916A71778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8309C33EDBC2E8B26C407F4 /* Build configuration list for PBXNativeTarget "Offline PlantID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F66741EACE4A062D23ED758 /* Debug */,
+				5810CB09DFC4DA2F8F556CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tensorflow/tensorflow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.16.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35AD6CC3B83F46931A3E01F8 /* TensorFlowLiteSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D4DEEF895C59284997EFCDF /* XCRemoteSwiftPackageReference "tensorflow" */;
+			productName = TensorFlowLiteSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8A08D71BFE876E9A8E26EE8A /* Project object */;
+}
